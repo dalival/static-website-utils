@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 200px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px; /* Adjust the space between label and input */
+    border: 2px solid palegreen; /* Emerald color borders */
+    border-radius: 8px; /* Round corners */
+    font-size: 24px; /* Increase font size */
+    outline: none; /* Remove the blue outline on focus */
+    -webkit-appearance: none; /* Remove up and down arrows on input (Chrome) */
+    -moz-appearance: textfield; /* Remove up and down arrows on input (Firefox) */
+}
+
+#labelText {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px; /* Increase font size */
+}
+
+#resultText {
+    font-size: 24px; /* Increase font size */
+    margin-top: 10px;
+    color: black; /* Set default color */
+    display: none; /* Hide initially */
+}
+
+/* Add this CSS rule to define the red color for numbers */
+.red {
+    color: red;
+}
