@@ -1,52 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "JetBrains Mono", "Inconsolata", "Cascadia Mono", "Consolas", monospace;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(15, 117, 102, 0.88);
 }
 
 .container {
-    padding: 200px;
+    padding-top: 140px;
+    width: 50%;
 }
 
 input[type="number"] {
-    width: 100%;
+    font-family: "JetBrains Mono", "Inconsolata", "Cascadia Mono", "Consolas", monospace;
+    width: 70%;
     padding: 20px;
-    margin-top: 10px; /* Adjust the space between label and input */
-    border: 2px solid palegreen; /* Emerald color borders */
-    border-radius: 8px; /* Round corners */
-    font-size: 24px; /* Increase font size */
-    outline: none; /* Remove the blue outline on focus */
-    -webkit-appearance: none; /* Remove up and down arrows on input (Chrome) */
-    -moz-appearance: textfield; /* Remove up and down arrows on input (Firefox) */
+    margin-top: 20px;
+    border: 0;
+    border-radius: 12px;
+    font-size: 24px;
+    outline: none;
+    background-color: #086e5f;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-#labelText {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px; /* Increase font size */
+.label-tip {
+    font-size: 38px;
+    font-weight: bolder;
+    margin: 30px;
+    color: #065045;
 }
 
 #resultText {
-    font-size: 24px; /* Increase font size */
-    margin-top: 10px;
-    color: black; /* Set default color */
+    font-size: 34px;
+    margin-top: 50px;
+    color: black;
     display: none; /* Hide initially */
 }
 
-/* Add this CSS rule to define the red color for numbers */
 .red {
-    color: red;
+    color: #7c2525;
+    font-size: 54px;
+    font-weight: bolder;
 }
 
-/* Add this CSS rule to remove the up and down arrows on number inputs */
+/* Remove the up and down arrows on number inputs */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* Chrome */
+    -moz-appearance: textfield; /* Mozilla */
     appearance: none;
     margin: 0;
 }
